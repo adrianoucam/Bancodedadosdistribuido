@@ -164,9 +164,9 @@ def melhor_arranjo(vetorafinidade,matrizuso,atributos):
             n=i-1
             if i==1:
                 n=0        
-            vetcont.append(CalculaCont(vetorafinidade,n,i,i+1))    
+            vetcont.append([[n+1,i+1,i+2],CalculaCont(vetorafinidade,n,i,i+1)])    
     for j in vetcont:
-        print(j)
+        print('Valores obtidos dos arranjos',j)
         
 
     
