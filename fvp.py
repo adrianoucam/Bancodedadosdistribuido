@@ -9,13 +9,13 @@ numero_de_sites=1 # valor inicial - sera ajustado em main ()
 numero_de_queries=3
 numero_de_atributos=4
 
-atributos_vet2=[[1,'matricula'],
+atributos_vet=[[1,'matricula'],
                [2,'nomecliente'],
                [3,'filiacao'],
                [4,'anosocio'],
                [5,'idade']]
 
-atributos_vet=[[1,'pno'],
+atributos_vet2=[[1,'pno'],
                [2,'pname'],
                [3,'budget'],
                [4,'loc']]
@@ -83,6 +83,16 @@ vetor_qry=[[35],
            [20],
            [10]]
 
+# exemplo trabalho
+matriz_uso=[[1,1,1,0,0],
+            [1,0,0,1,1],
+            [1,1,1,1,1] ]
+
+vetor_qry=[[70],
+           [50],
+           [10]]
+
+
 vetor_aff2=[[0 for j in range(5)] for i in range(5)]
 
 def matmult(a,b):
@@ -137,7 +147,7 @@ def calculateBond(_ptr, left,  right) :
         else:
             for i in range(len(_ptr)):                
                 if (i>0) :
-                    print ('Somando a{} x a{}={}'.format(i+1, left+1,_ptr[i][left]),' ',' a{} x a{}={} ={}'.format(i+1, right+1,_ptr[i][right],_ptr[i][left] * _ptr[i][right]))
+                    print ('   Somando (a{} x a{})={}'.format(i+1, left+1,_ptr[i][left]),' x ','(a{} x a{}) ={} ={}'.format(i+1, right+1,_ptr[i][right],_ptr[i][left] * _ptr[i][right]))
                     sum = sum + (_ptr[i][left] * _ptr[i][right]);
         
             
@@ -155,7 +165,7 @@ def CalculaCont(vetor,esquerda,meio,direita):
     
         
     retorno =(2*calculateBond(vetor,esquerda,direita))+(2*calculateBond(vetor,direita,meio))-(2*calculateBond(vetor,esquerda,meio))
-    print('resultado do calculcaCont ',retorno)
+    print('--------- Resultado do calculcaCont ------------- ',retorno)
     return retorno
     
 def melhor_arranjo(vetorafinidade,matrizuso,atributos):    
@@ -198,6 +208,12 @@ def main():
     
     print('------------- Lista de atributos')
     for i in atributos_vet:
+        print(i)    
+    print('------------- Matriz de Uso ')
+    for i in matriz_uso:    
+        print(i)    
+    print('------------- Matriz de Frequencia ')
+    for i in vetor_qry:    
         print(i)
     vetor_aff=preenche_vet_aff(atributos_vet,vetor_qry,matriz_uso)
     print('------------- Matriz de afinidade')
