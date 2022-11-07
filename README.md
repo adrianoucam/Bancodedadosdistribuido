@@ -23,3 +23,9 @@ vetor_qry=[[15,20,10],
            [5,0,0],
            [25,25,25],
            [3,0,0]]
+           
+           
+O resultado final deve ser o maior valor entre os campos ordenados. Abaixo, por exemplo, seria 26000 (o melhor arranjo)
+Valores obtidos dos arranjos [[2, 3, 4], 26000]
+Valores obtidos dos arranjos [[3, 4, 5], -14800]
+Valores obtidos dos arranjos [[4, 5, 6], 14800]
