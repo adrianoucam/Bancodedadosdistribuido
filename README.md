@@ -1,4 +1,5 @@
-# Bancodedadosdistribuido
+# Bancodedadosdistribuido 
+# fragmentacaovertical
 
 # Adriano Lima e Souza - adrianoucam@gmail.com
 # 05 de novembro de 2022
