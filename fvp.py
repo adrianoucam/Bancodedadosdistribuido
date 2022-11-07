@@ -9,13 +9,13 @@ numero_de_sites=1 # valor inicial - sera ajustado em main ()
 numero_de_queries=3
 numero_de_atributos=4
 
-atributos_vet=[[1,'matricula'],
+atributos_vet2=[[1,'matricula'],
                [2,'nomecliente'],
                [3,'filiacao'],
                [4,'anosocio'],
                [5,'idade']]
 
-atributos_vet1=[[1,'pno'],
+atributos_vet=[[1,'pno'],
                [2,'pname'],
                [3,'budget'],
                [4,'loc']]
@@ -24,14 +24,6 @@ atributos_vet1=[[1,'pno'],
 #         Q2
 #         Q3 
 
-vetor_qry2=[[70,50,3],
-           [20,30,5],
-           [10,20,10]]
-
-vetor_qry1=[[15,20,10],
-           [5,0,0],
-           [25,25,25],
-           [3,0,0]]
 
 # simplificando 15+20+10 = 45
 # simplificando 5 = 5
@@ -43,39 +35,53 @@ vetor_qry2=[[45],
            [75],
            [3],]
 
-vetor_qry=[[70],
-           [50],
-           [10]]
 
 
 vetor_qry4=[[10],
            [20],
            [15]]
 
-vetor_qry5=[[35],
-           [20],
-           [10]]
+
 # matriz_uso    A1,A2,A3,A4
 #            Q1
 #            Q2
 #            Q3
 
+# exemplo do slide do professor
 matriz_uso1=[[1,0,1,0],
             [0,1,1,0],
             [0,1,0,1],
             [0,0,1,1]]
+# exemplo do slide do professor
+vetor_qry1=[[15,20,10],
+           [5,0,0],
+           [25,25,25],
+           [3,0,0]]
 
-matriz_uso=[[1,1,1,0,0],
+
+# exemplo 2
+matriz_uso2=[[1,1,1,0,0],
             [1,0,0,1,1],
             [1,1,1,1,1] ]
+vetor_qry2=[[70,50,3],
+           [20,30,5],
+           [10,20,10]]
 
+# exemplo 3
 matriz_uso3=[[1,0,0,1],
             [0,1,0,0],
             [1,1,1,0] ]
+vetor_qry3=[[70],
+           [50],
+           [10]]
 
-matriz_uso4=[[1,0,1,1],
+# exemplo 4 
+matriz_uso=[[1,0,1,1],
             [0,1,1,0],
             [1,0,0,1] ]
+vetor_qry=[[35],
+           [20],
+           [10]]
 
 vetor_aff2=[[0 for j in range(5)] for i in range(5)]
 
@@ -131,7 +137,7 @@ def calculateBond(_ptr, left,  right) :
         else:
             for i in range(len(_ptr)):                
                 if (i>0) :
-                    print ('Somando a{} x a{}={}'.format(i, left,_ptr[i][left]),' ',' a{} x a{}={} ={}'.format(i, right,_ptr[i][right],_ptr[i][left] * _ptr[i][right]))
+                    print ('Somando a{} x a{}={}'.format(i+1, left+1,_ptr[i][left]),' ',' a{} x a{}={} ={}'.format(i+1, right+1,_ptr[i][right],_ptr[i][left] * _ptr[i][right]))
                     sum = sum + (_ptr[i][left] * _ptr[i][right]);
         
             
@@ -160,13 +166,19 @@ def melhor_arranjo(vetorafinidade,matrizuso,atributos):
     for j in atributos:
             print(j[1])                
     print ('armazenando vetores para ',len(atributos),' atributos ')
-    for i in range(2,len(matrizuso[0])):        
+    for i in range(2,len(atributos_vet)+1):        
             n=i-1
             if i==1:
                 n=0        
-            vetcont.append([[n+1,i+1,i+2],CalculaCont(vetorafinidade,n,i,i+1)])    
+            vetcont.append([[n,i,i+1],CalculaCont(vetorafinidade,n,i,i+1)])    
+            vetcont.append([[i+1,n,i],CalculaCont(vetorafinidade,i+1,n,i)])                
+            vetcont.append([[i+1,i,n],CalculaCont(vetorafinidade,i+1,i,n)])    
+            
+    vetcont.sort()        
+    print ('armazenando vetores para ',len(atributos),' atributos ')
     for j in vetcont:
-        print('Valores obtidos dos arranjos',j)
+        x1=j[0][0]
+        print('Valores obtidos dos arranjos  ',j)
         
 
     
