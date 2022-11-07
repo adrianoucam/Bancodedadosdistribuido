@@ -1,0 +1,256 @@
+------------- Lista de atributos
+[1, 'matricula']
+[2, 'nomecliente']
+[3, 'filiacao']
+[4, 'anosocio']
+[5, 'idade']
+------------- Matriz de Uso 
+[1, 1, 1, 0, 0]
+[1, 0, 0, 1, 1]
+[1, 1, 1, 1, 1]
+------------- Matriz de Frequencia 
+[70]
+[50]
+[10]
+------------- Matriz de afinidade
+[130, 80, 80, 60, 60]
+[80, 80, 80, 10, 10]
+[80, 80, 80, 10, 10]
+[60, 10, 10, 60, 60]
+[60, 10, 10, 60, 60]
+------------- Outros dados 
+Numero de atributos : 2
+Numero de sites : 1
+Numero de qyeries : 1
+matricula
+nomecliente
+filiacao
+anosocio
+idade
+armazenando vetores para  5  atributos 
+tamanho do vetor  5  valores para  1 2 3
+Calculando Bond  1 3
+zerando porque os valores para left e right foram  1   3
+soma dos valores  1  e  3  =  0
+Calculando Bond  3 2
+   Somando (a2 x a3)=80  x  (a2 x a2) =80 =6400
+   Somando (a3 x a3)=80  x  (a3 x a2) =80 =6400
+   Somando (a4 x a3)=10  x  (a4 x a2) =10 =100
+   Somando (a5 x a3)=10  x  (a5 x a2) =10 =100
+soma dos valores  3  e  2  =  13000
+Calculando Bond  1 2
+zerando porque os valores para left e right foram  1   2
+soma dos valores  1  e  2  =  0
+--------- Resultado do calculcaCont -------------  26000
+tamanho do vetor  5  valores para  3 1 2
+Calculando Bond  3 2
+   Somando (a2 x a3)=80  x  (a2 x a2) =80 =6400
+   Somando (a3 x a3)=80  x  (a3 x a2) =80 =6400
+   Somando (a4 x a3)=10  x  (a4 x a2) =10 =100
+   Somando (a5 x a3)=10  x  (a5 x a2) =10 =100
+soma dos valores  3  e  2  =  13000
+Calculando Bond  2 1
+   Somando (a2 x a2)=80  x  (a2 x a1) =80 =6400
+   Somando (a3 x a2)=80  x  (a3 x a1) =80 =6400
+   Somando (a4 x a2)=10  x  (a4 x a1) =60 =600
+   Somando (a5 x a2)=10  x  (a5 x a1) =60 =600
+soma dos valores  2  e  1  =  14000
+Calculando Bond  3 1
+   Somando (a2 x a3)=80  x  (a2 x a1) =80 =6400
+   Somando (a3 x a3)=80  x  (a3 x a1) =80 =6400
+   Somando (a4 x a3)=10  x  (a4 x a1) =60 =600
+   Somando (a5 x a3)=10  x  (a5 x a1) =60 =600
+soma dos valores  3  e  1  =  14000
+--------- Resultado do calculcaCont -------------  26000
+tamanho do vetor  5  valores para  3 2 1
+Calculando Bond  3 1
+   Somando (a2 x a3)=80  x  (a2 x a1) =80 =6400
+   Somando (a3 x a3)=80  x  (a3 x a1) =80 =6400
+   Somando (a4 x a3)=10  x  (a4 x a1) =60 =600
+   Somando (a5 x a3)=10  x  (a5 x a1) =60 =600
+soma dos valores  3  e  1  =  14000
+Calculando Bond  1 2
+zerando porque os valores para left e right foram  1   2
+soma dos valores  1  e  2  =  0
+Calculando Bond  3 2
+   Somando (a2 x a3)=80  x  (a2 x a2) =80 =6400
+   Somando (a3 x a3)=80  x  (a3 x a2) =80 =6400
+   Somando (a4 x a3)=10  x  (a4 x a2) =10 =100
+   Somando (a5 x a3)=10  x  (a5 x a2) =10 =100
+soma dos valores  3  e  2  =  13000
+--------- Resultado do calculcaCont -------------  2000
+tamanho do vetor  5  valores para  2 3 4
+Calculando Bond  2 4
+   Somando (a2 x a2)=80  x  (a2 x a4) =10 =800
+   Somando (a3 x a2)=80  x  (a3 x a4) =10 =800
+   Somando (a4 x a2)=10  x  (a4 x a4) =60 =600
+   Somando (a5 x a2)=10  x  (a5 x a4) =60 =600
+soma dos valores  2  e  4  =  2800
+Calculando Bond  4 3
+   Somando (a2 x a4)=10  x  (a2 x a3) =80 =800
+   Somando (a3 x a4)=10  x  (a3 x a3) =80 =800
+   Somando (a4 x a4)=60  x  (a4 x a3) =10 =600
+   Somando (a5 x a4)=60  x  (a5 x a3) =10 =600
+soma dos valores  4  e  3  =  2800
+Calculando Bond  2 3
+   Somando (a2 x a2)=80  x  (a2 x a3) =80 =6400
+   Somando (a3 x a2)=80  x  (a3 x a3) =80 =6400
+   Somando (a4 x a2)=10  x  (a4 x a3) =10 =100
+   Somando (a5 x a2)=10  x  (a5 x a3) =10 =100
+soma dos valores  2  e  3  =  13000
+--------- Resultado do calculcaCont -------------  -14800
+tamanho do vetor  5  valores para  4 2 3
+Calculando Bond  4 3
+   Somando (a2 x a4)=10  x  (a2 x a3) =80 =800
+   Somando (a3 x a4)=10  x  (a3 x a3) =80 =800
+   Somando (a4 x a4)=60  x  (a4 x a3) =10 =600
+   Somando (a5 x a4)=60  x  (a5 x a3) =10 =600
+soma dos valores  4  e  3  =  2800
+Calculando Bond  3 2
+   Somando (a2 x a3)=80  x  (a2 x a2) =80 =6400
+   Somando (a3 x a3)=80  x  (a3 x a2) =80 =6400
+   Somando (a4 x a3)=10  x  (a4 x a2) =10 =100
+   Somando (a5 x a3)=10  x  (a5 x a2) =10 =100
+soma dos valores  3  e  2  =  13000
+Calculando Bond  4 2
+   Somando (a2 x a4)=10  x  (a2 x a2) =80 =800
+   Somando (a3 x a4)=10  x  (a3 x a2) =80 =800
+   Somando (a4 x a4)=60  x  (a4 x a2) =10 =600
+   Somando (a5 x a4)=60  x  (a5 x a2) =10 =600
+soma dos valores  4  e  2  =  2800
+--------- Resultado do calculcaCont -------------  26000
+tamanho do vetor  5  valores para  4 3 2
+Calculando Bond  4 2
+   Somando (a2 x a4)=10  x  (a2 x a2) =80 =800
+   Somando (a3 x a4)=10  x  (a3 x a2) =80 =800
+   Somando (a4 x a4)=60  x  (a4 x a2) =10 =600
+   Somando (a5 x a4)=60  x  (a5 x a2) =10 =600
+soma dos valores  4  e  2  =  2800
+Calculando Bond  2 3
+   Somando (a2 x a2)=80  x  (a2 x a3) =80 =6400
+   Somando (a3 x a2)=80  x  (a3 x a3) =80 =6400
+   Somando (a4 x a2)=10  x  (a4 x a3) =10 =100
+   Somando (a5 x a2)=10  x  (a5 x a3) =10 =100
+soma dos valores  2  e  3  =  13000
+Calculando Bond  4 3
+   Somando (a2 x a4)=10  x  (a2 x a3) =80 =800
+   Somando (a3 x a4)=10  x  (a3 x a3) =80 =800
+   Somando (a4 x a4)=60  x  (a4 x a3) =10 =600
+   Somando (a5 x a4)=60  x  (a5 x a3) =10 =600
+soma dos valores  4  e  3  =  2800
+--------- Resultado do calculcaCont -------------  26000
+tamanho do vetor  5  valores para  3 4 5
+Calculando Bond  3 5
+   Somando (a2 x a3)=80  x  (a2 x a5) =10 =800
+   Somando (a3 x a3)=80  x  (a3 x a5) =10 =800
+   Somando (a4 x a3)=10  x  (a4 x a5) =60 =600
+   Somando (a5 x a3)=10  x  (a5 x a5) =60 =600
+soma dos valores  3  e  5  =  2800
+Calculando Bond  5 4
+   Somando (a2 x a5)=10  x  (a2 x a4) =10 =100
+   Somando (a3 x a5)=10  x  (a3 x a4) =10 =100
+   Somando (a4 x a5)=60  x  (a4 x a4) =60 =3600
+   Somando (a5 x a5)=60  x  (a5 x a4) =60 =3600
+soma dos valores  5  e  4  =  7400
+Calculando Bond  3 4
+   Somando (a2 x a3)=80  x  (a2 x a4) =10 =800
+   Somando (a3 x a3)=80  x  (a3 x a4) =10 =800
+   Somando (a4 x a3)=10  x  (a4 x a4) =60 =600
+   Somando (a5 x a3)=10  x  (a5 x a4) =60 =600
+soma dos valores  3  e  4  =  2800
+--------- Resultado do calculcaCont -------------  14800
+tamanho do vetor  5  valores para  5 3 4
+Calculando Bond  5 4
+   Somando (a2 x a5)=10  x  (a2 x a4) =10 =100
+   Somando (a3 x a5)=10  x  (a3 x a4) =10 =100
+   Somando (a4 x a5)=60  x  (a4 x a4) =60 =3600
+   Somando (a5 x a5)=60  x  (a5 x a4) =60 =3600
+soma dos valores  5  e  4  =  7400
+Calculando Bond  4 3
+   Somando (a2 x a4)=10  x  (a2 x a3) =80 =800
+   Somando (a3 x a4)=10  x  (a3 x a3) =80 =800
+   Somando (a4 x a4)=60  x  (a4 x a3) =10 =600
+   Somando (a5 x a4)=60  x  (a5 x a3) =10 =600
+soma dos valores  4  e  3  =  2800
+Calculando Bond  5 3
+   Somando (a2 x a5)=10  x  (a2 x a3) =80 =800
+   Somando (a3 x a5)=10  x  (a3 x a3) =80 =800
+   Somando (a4 x a5)=60  x  (a4 x a3) =10 =600
+   Somando (a5 x a5)=60  x  (a5 x a3) =10 =600
+soma dos valores  5  e  3  =  2800
+--------- Resultado do calculcaCont -------------  14800
+tamanho do vetor  5  valores para  5 4 3
+Calculando Bond  5 3
+   Somando (a2 x a5)=10  x  (a2 x a3) =80 =800
+   Somando (a3 x a5)=10  x  (a3 x a3) =80 =800
+   Somando (a4 x a5)=60  x  (a4 x a3) =10 =600
+   Somando (a5 x a5)=60  x  (a5 x a3) =10 =600
+soma dos valores  5  e  3  =  2800
+Calculando Bond  3 4
+   Somando (a2 x a3)=80  x  (a2 x a4) =10 =800
+   Somando (a3 x a3)=80  x  (a3 x a4) =10 =800
+   Somando (a4 x a3)=10  x  (a4 x a4) =60 =600
+   Somando (a5 x a3)=10  x  (a5 x a4) =60 =600
+soma dos valores  3  e  4  =  2800
+Calculando Bond  5 4
+   Somando (a2 x a5)=10  x  (a2 x a4) =10 =100
+   Somando (a3 x a5)=10  x  (a3 x a4) =10 =100
+   Somando (a4 x a5)=60  x  (a4 x a4) =60 =3600
+   Somando (a5 x a5)=60  x  (a5 x a4) =60 =3600
+soma dos valores  5  e  4  =  7400
+--------- Resultado do calculcaCont -------------  -3600
+tamanho do vetor  5  valores para  4 5 6
+Calculando Bond  4 999
+zerando porque os valores para left e right foram  4   999
+soma dos valores  4  e  999  =  0
+Calculando Bond  999 5
+zerando porque os valores para left e right foram  999   5
+soma dos valores  999  e  5  =  0
+Calculando Bond  4 5
+   Somando (a2 x a4)=10  x  (a2 x a5) =10 =100
+   Somando (a3 x a4)=10  x  (a3 x a5) =10 =100
+   Somando (a4 x a4)=60  x  (a4 x a5) =60 =3600
+   Somando (a5 x a4)=60  x  (a5 x a5) =60 =3600
+soma dos valores  4  e  5  =  7400
+--------- Resultado do calculcaCont -------------  -14800
+tamanho do vetor  5  valores para  6 4 5
+Calculando Bond  6 5
+zerando porque os valores para left e right foram  6   5
+soma dos valores  6  e  5  =  0
+Calculando Bond  5 4
+   Somando (a2 x a5)=10  x  (a2 x a4) =10 =100
+   Somando (a3 x a5)=10  x  (a3 x a4) =10 =100
+   Somando (a4 x a5)=60  x  (a4 x a4) =60 =3600
+   Somando (a5 x a5)=60  x  (a5 x a4) =60 =3600
+soma dos valores  5  e  4  =  7400
+Calculando Bond  6 4
+zerando porque os valores para left e right foram  6   4
+soma dos valores  6  e  4  =  0
+--------- Resultado do calculcaCont -------------  14800
+tamanho do vetor  5  valores para  6 5 4
+Calculando Bond  6 4
+zerando porque os valores para left e right foram  6   4
+soma dos valores  6  e  4  =  0
+Calculando Bond  4 5
+   Somando (a2 x a4)=10  x  (a2 x a5) =10 =100
+   Somando (a3 x a4)=10  x  (a3 x a5) =10 =100
+   Somando (a4 x a4)=60  x  (a4 x a5) =60 =3600
+   Somando (a5 x a4)=60  x  (a5 x a5) =60 =3600
+soma dos valores  4  e  5  =  7400
+Calculando Bond  6 5
+zerando porque os valores para left e right foram  6   5
+soma dos valores  6  e  5  =  0
+--------- Resultado do calculcaCont -------------  14800
+armazenando vetores para  5  atributos 
+Valores obtidos dos arranjos   [[1, 2, 3], 26000]
+Valores obtidos dos arranjos   [[2, 3, 4], -14800]
+Valores obtidos dos arranjos   [[3, 1, 2], 26000]
+Valores obtidos dos arranjos   [[3, 2, 1], 2000]
+Valores obtidos dos arranjos   [[3, 4, 5], 14800]
+Valores obtidos dos arranjos   [[4, 2, 3], 26000]
+Valores obtidos dos arranjos   [[4, 3, 2], 26000]
+Valores obtidos dos arranjos   [[4, 5, 6], -14800]
+Valores obtidos dos arranjos   [[5, 3, 4], 14800]
+Valores obtidos dos arranjos   [[5, 4, 3], -3600]
+Valores obtidos dos arranjos   [[6, 4, 5], 14800]
+Valores obtidos dos arranjos   [[6, 5, 4], 14800]
