@@ -131,12 +131,14 @@ def calculateBond(_ptr, left,  right) :
         else:
             for i in range(len(_ptr)):                
                 if (i>0) :
-                    # print (i,left,_ptr[i][left],' ',_ptr[i][right],' ',_ptr[i][left] * _ptr[i][right])
+                    print ('Somando ',left,_ptr[i][left],' ',_ptr[i][right],' * ',_ptr[i][left] * _ptr[i][right])
                     sum = sum + (_ptr[i][left] * _ptr[i][right]);
         
             
-        # print('soma dos valores ',left+1 ,' e ',right+1,' = ',sum)
+        print('soma dos valores ',left+1 ,' e ',right+1,' = ',sum)
         return sum;
+    
+    
 def CalculaCont(vetor,esquerda,meio,direita):
     retorno=0
     print ('tamanho do vetor ',len(vetor),' valores para ',esquerda,meio,direita)
@@ -162,7 +164,7 @@ def melhor_arranjo(vetorafinidade,matrizuso,atributos):
             n=i-1
             if i==1:
                 n=0        
-            vetcont.append(CalculaCont(vetor_aff2,n,i,i+1))    
+            vetcont.append(CalculaCont(vetorafinidade,n,i,i+1))    
     for j in vetcont:
         print(j)
         
@@ -170,23 +172,24 @@ def melhor_arranjo(vetorafinidade,matrizuso,atributos):
     
 # print (vetor_aff2)    
 # exemplo de como o vetor vai ficar preenchido depois de calcular afinidade de atributos com queries
-vetor_aff2=[[130,80,80,60,60],
+vetor_aff3=[[130,80,80,60,60],
            [80,80,80,10,10],
            [80,80,80,10,10],
            [60,10,10,60,60],
            [60,10,10,60,60]]
 # FIM do exemplo de como o vetor vai ficar preenchido depois de calcular afinidade de atributos com queries
 def main():
-    numero_de_sites=len(vetor_qry[1])
+    
     numero_de_queries=len(vetor_qry[0])
+    numero_de_sites=len(vetor_qry[0])
     numero_de_atributos=len(atributos_vet[0])
     
     print('------------- Lista de atributos')
     for i in atributos_vet:
         print(i)
-    vetor_aff2=preenche_vet_aff(atributos_vet,vetor_qry,matriz_uso)
+    vetor_aff=preenche_vet_aff(atributos_vet,vetor_qry,matriz_uso)
     print('------------- Matriz de afinidade')
-    for i in vetor_aff2:
+    for i in vetor_aff:
         print(i)
     print('------------- Outros dados ')
         
@@ -214,7 +217,7 @@ def main():
     print (CalculaCont(vetor_aff2,2,5,3))
     print ('------------------------------------------') 
     '''
-    melhor_arranjo(vetor_aff2,matriz_uso,atributos_vet) 
+    melhor_arranjo(vetor_aff,matriz_uso,atributos_vet) 
 
 #print(np.dot(vetor_qry,matriz_uso))
 
