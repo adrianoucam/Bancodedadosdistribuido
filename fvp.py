@@ -9,13 +9,13 @@ numero_de_sites=1 # valor inicial - sera ajustado em main ()
 numero_de_queries=3
 numero_de_atributos=4
 
-atributos_vet1=[[1,'matricula'],
+atributos_vet=[[1,'matricula'],
                [2,'nomecliente'],
                [3,'filiacao'],
                [4,'anosocio'],
                [5,'idade']]
 
-atributos_vet=[[1,'pno'],
+atributos_vet1=[[1,'pno'],
                [2,'pname'],
                [3,'budget'],
                [4,'loc']]
@@ -43,16 +43,16 @@ vetor_qry2=[[45],
            [75],
            [3],]
 
-vetor_qry3=[[70],
+vetor_qry=[[70],
            [50],
            [10]]
 
 
-vetor_qry=[[10],
+vetor_qry4=[[10],
            [20],
            [15]]
 
-vetor_qry=[[35],
+vetor_qry5=[[35],
            [20],
            [10]]
 # matriz_uso    A1,A2,A3,A4
@@ -65,7 +65,7 @@ matriz_uso1=[[1,0,1,0],
             [0,1,0,1],
             [0,0,1,1]]
 
-matriz_uso2=[[1,1,1,0,1],
+matriz_uso=[[1,1,1,0,0],
             [1,0,0,1,1],
             [1,1,1,1,1] ]
 
@@ -73,7 +73,7 @@ matriz_uso3=[[1,0,0,1],
             [0,1,0,0],
             [1,1,1,0] ]
 
-matriz_uso=[[1,0,1,1],
+matriz_uso4=[[1,0,1,1],
             [0,1,1,0],
             [1,0,0,1] ]
 
@@ -131,7 +131,7 @@ def calculateBond(_ptr, left,  right) :
         else:
             for i in range(len(_ptr)):                
                 if (i>0) :
-                    print ('Somando ',left,_ptr[i][left],' ',_ptr[i][right],' * ',_ptr[i][left] * _ptr[i][right])
+                    print ('Somando a{} x a{}={}'.format(i, left,_ptr[i][left]),' ',' a{} x a{}={} ={}'.format(i, right,_ptr[i][right],_ptr[i][left] * _ptr[i][right]))
                     sum = sum + (_ptr[i][left] * _ptr[i][right]);
         
             
